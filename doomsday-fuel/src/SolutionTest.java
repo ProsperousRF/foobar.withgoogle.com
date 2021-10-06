@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /** @author Stanislav Rakitov */
 class SolutionTest {
@@ -16,7 +16,7 @@ class SolutionTest {
     };
     int[] expected = {7, 6, 8, 21};
 
-    assertEquals(expected, Solution.solution(testcase));
+    assertArrayEquals(expected, Solution.solution(testcase));
   }
 
   @Test
@@ -31,6 +31,6 @@ class SolutionTest {
     };
     int[] expected = {0, 3, 2, 9, 14};
 
-    assertEquals(expected, Solution.solution(testcase));
+    assertArrayEquals(expected, Solution.solution(testcase));
   }
 }
